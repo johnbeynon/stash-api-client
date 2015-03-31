@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["john@beynon.org.uk"]
 
   spec.summary       = "Ruby wrapper for Stash API"
-  spec.description   = "Ruby wrapper for Stash API"}
+  spec.description   = "Ruby wrapper for Stash API"
   spec.homepage      = ""
   spec.license       = "MIT"
 
