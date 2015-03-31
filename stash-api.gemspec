@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "stash-api"
   spec.version       = StashAPI::VERSION
   spec.authors       = ["John Beynon"]
-  spec.email         = ["john@beynon.org.uk]
+  spec.email         = ["john@beynon.org.uk"]
 
   spec.summary       = "Ruby wrapper for Stash API"
   spec.description   = "Ruby wrapper for Stash API"}
