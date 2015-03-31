@@ -9,7 +9,7 @@
 require 'heroics'
 require 'uri'
 
-module Stash
+module StashAPI
   # Get a Client configured to use HTTP Basic authentication.
   #
   # @param api_key [String] The API key to use when connecting.
