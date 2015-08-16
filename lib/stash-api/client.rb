@@ -9,7 +9,7 @@
 require 'heroics'
 require 'uri'
 
-module Stash
+module StashAPI
   # Get a Client configured to use HTTP Basic authentication.
   #
   # @param api_key [String] The API key to use when connecting.
@@ -129,14 +129,14 @@ module Stash
 
     # Delete an existing collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     def delete(collection_identity)
       @client.collection.delete(collection_identity)
     end
 
     # Info for existing collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     def info(collection_identity)
       @client.collection.info(collection_identity)
     end
@@ -148,7 +148,7 @@ module Stash
 
     # Update an existing collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     # @param body: the object to pass as the request payload
     def update(collection_identity, body)
       @client.collection.update(collection_identity, body)
@@ -163,21 +163,21 @@ module Stash
 
     # Delete an existing resource.
     #
-    # @param resource_identity: 
+    # @param resource_identity:
     def delete(resource_identity)
       @client.resource.delete(resource_identity)
     end
 
     # Info for existing resource.
     #
-    # @param resource_identity: 
+    # @param resource_identity:
     def info(resource_identity)
       @client.resource.info(resource_identity)
     end
 
     # Update an existing resource.
     #
-    # @param resource_identity: 
+    # @param resource_identity:
     # @param body: the object to pass as the request payload
     def update(resource_identity, body)
       @client.resource.update(resource_identity, body)
@@ -185,14 +185,14 @@ module Stash
 
     # List resources in a collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     def collection_resources(collection_identity)
       @client.resource.collection_resources(collection_identity)
     end
 
     # Add a new resource in a collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     # @param body: the object to pass as the request payload
     def create_resource(collection_identity, body)
       @client.resource.create_resource(collection_identity, body)
@@ -214,14 +214,14 @@ module Stash
 
     # Delete an existing tag.
     #
-    # @param tag_identity: 
+    # @param tag_identity:
     def delete(tag_identity)
       @client.tag.delete(tag_identity)
     end
 
     # Info for existing tag.
     #
-    # @param tag_identity: 
+    # @param tag_identity:
     def info(tag_identity)
       @client.tag.info(tag_identity)
     end
@@ -233,7 +233,7 @@ module Stash
 
     # Update an existing tag.
     #
-    # @param tag_identity: 
+    # @param tag_identity:
     # @param body: the object to pass as the request payload
     def update(tag_identity, body)
       @client.tag.update(tag_identity, body)
@@ -241,7 +241,7 @@ module Stash
 
     # Tags in collection.
     #
-    # @param collection_identity: 
+    # @param collection_identity:
     def lists(collection_identity)
       @client.tag.lists(collection_identity)
     end
